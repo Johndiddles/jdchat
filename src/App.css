@@ -38,7 +38,7 @@
   
   .ce-chat-form-container {
     padding-bottom: 30px !important;
-    background-color: blue !important;
+    background-color: #1266F1 !important;
     color: white !important;
   }
 
@@ -60,7 +60,7 @@
   .ce-primary-button {
     border-radius: 6px !important;
     background-color: white !important;
-    color: blue !important;
+    color: #1266F1 !important;
     position: relative;
     bottom: 1px;
   }
@@ -91,7 +91,7 @@
   .ce-chat-settings-container {
     padding-top: 1.45em !important;
     padding-bottom: 1.45em;
-    background: blue;
+    background: #1266F1;
     width: 100%;
   }
   
@@ -123,7 +123,7 @@
     width: 100%;
     padding: 18px;
     text-align: center;
-    background-color: blue;
+    background-color: #1266F1;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -174,7 +174,7 @@
     font-size: 16px;
     border-radius: 6px;
     max-width: 60%;
-    background-color: blue;
+    background-color: #1266F1;
   }
   
   .message-image {

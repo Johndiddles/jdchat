@@ -4,19 +4,31 @@
       Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
       Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     letter-spacing: 0.5px;
+    box-sizing: border-box;
   }
-  
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .ce-chat-list {
     background-color: rgb(240, 240, 240) !important;
   }
   
   .ce-chats-container {
-    background-color: rgb(240, 240, 240) !important;
+    background-color: white !important;
+    overflow-x: hidden;
   }
   
+  .ce-chat-card{
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+
+  .ce-chat-card:hover{
+    background-color: rgb(247, 247, 247);
+  }
+
   .ce-active-chat-card {
-    background-color: #cabcdc !important;
-    border: 4px solid #cabcdc !important;
+    background-color: rgb(230, 230, 230) !important;
+    /* border: 4px solid #cabcdc !important; */
     border-radius: 0px !important;
   }
   
@@ -25,17 +37,30 @@
   }
   
   .ce-chat-form-container {
-    padding-bottom: 20px !important;
+    padding-bottom: 30px !important;
+    background-color: blue !important;
+    color: white !important;
+  }
+
+  .ce-person-container {
+    padding: 0 0.8em;
+  }
+
+  .ce-photo-feed {
+    padding: 0 0.8em;
+  }
+  .ce-chat-title-form {
+    padding: 0 1em;
   }
   
   .ce-text-input {
-    border-radius: 6px !important;
-    border: 1px solid #3b2a50 !important;
+    border-radius: 10px !important;
   }
   
   .ce-primary-button {
     border-radius: 6px !important;
-    background-color: #7554a0 !important;
+    background-color: white !important;
+    color: blue !important;
     position: relative;
     bottom: 1px;
   }
@@ -44,9 +69,12 @@
     background-color: white !important;
     border-radius: 22px !important;
   }
-  
+  .ce-settings-container{
+    width: 100% !important;
+    padding: 0px !important;
+  }
   .ce-settings {
-    background-color: rgb(240, 240, 240) !important;
+    background-color: white !important;
   }
   
   .ce-autocomplete-input {
@@ -61,7 +89,10 @@
   }
   
   .ce-chat-settings-container {
-    padding-top: 12px !important;
+    padding-top: 1.45em !important;
+    padding-bottom: 1.45em;
+    background: blue;
+    width: 100%;
   }
   
   .ce-chat-avatars-row {
@@ -73,27 +104,46 @@
   .chat-feed {
     height: 100%;
     width: 100%;
-    overflow: scroll;
-    background-color: rgb(240, 240, 240);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+  }
+
+  .chat-feed::-webkit-scrollbar{
+    display: block;
+    width: 3px;
+    background: rgb(255, 255, 255);
+  }
+
+  .chat-feed::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230);
   }
   
   .chat-title-container {
-    width: calc(100% - 36px);
+    width: 100%;
     padding: 18px;
     text-align: center;
+    background-color: blue;
+    position: absolute;
+    left: 0px;
+    top: 0px;
   }
   
   .chat-title {
-    color: #7554a0;
+    color: #fff;
     font-weight: 800;
     font-size: 24px;
   }
   
   .chat-subtitle {
-    color: #7554a0;
+    color: #fff;
     font-weight: 600;
     font-size: 12px;
     padding-top: 4px;
+  }
+
+  .messages-section{
+    margin-top: 6em;
   }
   
   .message-row {
@@ -124,6 +174,7 @@
     font-size: 16px;
     border-radius: 6px;
     max-width: 60%;
+    background-color: blue;
   }
   
   .message-image {
@@ -156,7 +207,7 @@
   .message-form-container {
     position: absolute;
     bottom: 0px;
-    width: calc(100% - 36px);
+    width: 100%;
     padding: 18px;
     background-color: rgb(240, 240, 240);
   }
@@ -164,7 +215,7 @@
   .message-form {
     overflow: hidden;
     border-radius: 6px;
-    border: 1px solid #3b2a50;
+    border: 1px solid gray;
     background-color: white;
   }
   

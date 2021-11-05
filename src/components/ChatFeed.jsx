@@ -3,7 +3,6 @@ import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
 
 const ChatFeed = (props) => {
-    // console.log(props);
 
     const { chats, activeChat, userName, messages } = props;
 
@@ -64,7 +63,9 @@ const ChatFeed = (props) => {
                     {chat.people.map((person) => ` ${person.person.username}`)}
                 </div>
             </div>
-            {renderMessages()}
+            <div className="messages-section">
+                {renderMessages()}
+            </div>
             <div style={{ height: '100px' }} />
             <div className="message-form-container">
                 <MessageForm {...props} chatId={activeChat} />
